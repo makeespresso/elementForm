@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Submit Method</title>
+</head>
+<body>
+<br><br>
+<center>
+	<form id="myForm" action"">
+	<textarea></textarea>
+<br><br>
+<input type="button" onclick="myfunction()" value="Submit">
+</form>
+</center>
+<script type="text/javascript">
+	function myfunction(){
+		document.getElementById('myForm').submit();
+		//"submit()" submits "myForm" data to server.
+		alert("All data have been submitted successfully!");
+	}
+</script>
+</body> 
+</html>
+
+
+<!-- "onClick="myfunction()" executes the myfunction() immediately when clicking the button.
+"getElementById("myForm")" access the "myform" by its id.
+"submit()" submits "myForm" data to server. 

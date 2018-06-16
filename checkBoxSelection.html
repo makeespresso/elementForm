@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>"Check Box" Selection</title>
+</head>
+<body>
+
+<br><br>
+<center>
+<p>Where you would like to go?</p>
+<form name="myForm">
+<input type="checkbox" id="destination" value="Thailand" onclick="myfunct(this.value)">Thailand</input> 
+<input type="checkbox" id="destination" value="Vietnam" onclick="myfunct(this.value)">Vietnam</input>
+<input type="checkbox" id="destination" value="Japan" onclick="myfunct(this.value)">Japan</input>
+<!--runs myfunct() when clicking on radio--> 
+</form>
+<script type="text/javascript">
+	function myfunct( v){
+		alert("You would like to go to: " + v + Good Luck!);
+	}
+</script>
+</center>
+</body>
+</html>

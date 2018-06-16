@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show the Value of an Element</title>
+</head>
+<body>
+<br><br>
+<center>
+<form>
+	<button id="myButton" value="12345678">Button</button>
+</form>
+</center>
+	<script type="text/javascript">
+		var button = document.getElementById('myButton');
+		button.onclick = function(){
+			document.write (button.value); //show button value
+			alert (button.value); //show button value
+		}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Data To Form</title>
+</head>
+<body>
+<center>
+	<br><br>
+	<br>Please enter data, and Enter.
+	<br><br>
+	<form>
+	<input type ="text" name="myText" id="myText"/>
+	<!-- "<input type="text">" accepts the data input -->
+	</form>
+</center>
+<script type="text/javascript">
+	document.getElementById("myText").onchange=function(){
+		//Change event
+		alert("You have entered: " + this.value); //"This" represents myText
+	} 
+</script>
+</body>
+</html>
+
+
+<!-- Output (Show what the user has inputted.)
+Explanation: 
+*** "<input type="text">" accepts the data inputted by the user.
+
+***"document.getElementById("myText")" access an element "myText" in current document.
+
+***"this.value" means the value of "myText"
+
+*** ".onchange = function()" executes the function when the value of the element changed.
+
+</body>

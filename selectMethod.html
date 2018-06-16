@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Select Selection</title>
+<script type="text/javascript">
+	function choose(color){
+		alert("The traffic light is "+ color);
+	}
+</script>
+</head>
+<body>
+<br><br>
+<center>
+	<form id="myForm">
+	<select name="trafficLight" onchange="choose(this.value)"> <!-- runs the function "choose()" when selecting an option -->
+		onChange="choose(this.value)">
+		<option value="Red">Red</option>
+		<option value="Yellow">Yellow</option>
+		<option value="Green">Green</option>
+	</select>
+</form>
+</center>
+</body> 
+</html>

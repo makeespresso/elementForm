@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>"Radio" Selection</title>
+</head>
+<body>
+<br><br>
+<center>
+<form name="myForm">
+<input type="radio" id="color" value="Red" onclick="myfunct(this.value)">Red</input> 
+<input type="radio" id="color" value="Yellow" onclick="myfunct(this.value)">Yellow</input>
+<input type="radio" id="color" value="Green" onclick="myfunct(this.value)">Green</input>
+<!--runs myfunct() when clicking on radio--> 
+</form>
+<script>
+	function myfunct( v){
+		alert("You selected: " + v);
+	}
+</script>
+</center>
+</body>
+</html>

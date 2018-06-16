@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Show What Inputted</title>
+</head>
+<body>
+<br><br>
+<center>
+	<form name="myForm">
+		<input type="text" name="myText" value=""/>
+		<input type="submit" onclick="show()">
+	</form>
+</center>
+<script type="text/javascript">
+	function show(){
+		alert("You've inputted: " + document.myForm.myText.value); /* gets the value of data which the user has inputted. */
+	}
+</script>
+</body>
+</html>
+
+<!-- OUTPUT: (Show what the user has inputted.)
+		EXPLANATION: "document.myForm.myText.value" gets the value of the text filed, to which  user has inputted data.

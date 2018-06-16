@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Access the Form</title>
+	<script type="text/javascript">
+	</script>
+</head>
+<body>
+<form name="form1"></form>
+<form name="form2"></form>
+<script type="text/javascript">
+	document.write(document.form1.name + "<br>");
+	document.write(document.form2.name + "<br>");
+	document.write(document.forms[0].name + "<br>");
+	document.write(document.forms[1].name + "<br>");
+</script>
+</body>
+</html>
+
+<!-- Explanation: 
+					"document.form1.name" returns form1's name
+					"document.forms[0].name" returns form [0]'s name.
+					-->
+					
