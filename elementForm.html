@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The Element of the Form</title>
+</head>
+<body>
+<form name="myForm">
+<input type="text" name="txt"/><br>
+<input type="radio" name="rd"/><br>
+<input type="checkBox" name="chbx"/><br>
+<input type="password" name="pwd"/><br>
+<select name="select"></select><br>
+<textarea name="area"></textarea><br>
+<input type="submit" name="submit"/><br>
+</form>
+<script type="text/javascript">
+	document.write("The 1st element is: " +document.myForm.txt.type+"<br>");
+	document.write("The 2nd element is: " +document.myForm.rd.type+"<br>");
+	document.write("The 3rd element is: " +document.myForm.chbx.type+"<br>");
+	document.write("The 4th element is: " +document.myForm.pwd.type+"<br>");
+	document.write("The 5th element is: " +document.myForm.elements["select"].nodeName+"<br>");
+	document.write("The 6th element is: " +document.myForm.elements["area"].nodeName+"<br>");
+	document.write("The 6th element is: " +document.myForm.elements["submit"].type+"<br>");
+</script>
+</body>
+</html>
+
+<!-- Explanation: "document.myForm.txt.type" returns the element type.
+				  "document.myForm.elements["select"].nodeName" returns the element type.
